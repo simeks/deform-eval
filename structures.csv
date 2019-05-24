@@ -1,0 +1,96 @@
+Index,Name,Brief
+1,Hippocampus R,HippR
+2,Hippocampus L,HippL
+3,Amygdala R,AmygR
+4,Amygdala L,AmygL
+5,Ant. temporal lobe medial part R,AtlmR
+6,Ant. temporal lobe medial part L,AtlmL
+7,Ant. temporal lobe lateral part R,AtllR
+8,Ant. temporal lobe lateral part L,AtllL
+9,Parahippocampal and ambient gyrus R,PhgR
+10,Parahippocampal and ambient gyrus L,PhgL
+11,Superior temporal gyrus middle part R,StgmR
+12,Superior temporal gyrus middle part L,StgmL
+13,Middle and inferior temporal gyrus R,MitgR
+14,Middle and inferior temporal gyrus L,MitgL
+15,Fusiform gyrus R,FusR
+16,Fusiform gyrus L,FusL
+17,Cerebellum R,CerebR
+18,Cerebellum L,CerebL
+19,Brainstem excl. substantia nigra,BStem
+20,Insula post. long gyrus L,IplgL
+21,Insula post. long gyrus R,IplgR
+22,Lateral remainder occipital lobe L,OccL
+23,Lateral remainder occipital lobe R,OccR
+24,Ant. cingulate gyrus L,AcgL
+25,Ant. cingulate gyrus R,AcgR
+26,Post. cingulate gyrus L,PcgL
+27,Post. cingulate gyrus R,PcgR
+28,Middle frontal gyrus L,MfgL
+29,Middle frontal gyrus R,MfgR
+30,Post. temporal lobe L,PtlL
+31,Post. temporal lobe R,PtlR
+32,Angular gyrus L,AgL
+33,Angular gyrus R,AgR
+34,Caudate nucleus L,CaudL
+35,Caudate nucleus R,CaudR
+36,Nucleus accumbens L,NaL
+37,Nucleus accumbens R,NaR
+38,Putamen L,PutL
+39,Putamen R,PutR
+40,Thalamus L,ThalL
+41,Thalamus R,ThalR
+42,Pallidum L,PallL
+43,Pallidum R,PallR
+44,Corpus callosum,CC
+45,Lateral ventricle excl. temporal horn R,LvR
+46,Lateral ventricle excl. temporal horn L,LvL
+47,Lateral ventricle temporal horn R,LvthR
+48,Lateral ventricle temporal horn L,LvthL
+49,Third ventricle,Tv
+50,Precentral gyrus L,PregL
+51,Precentral gyrus R,PregR
+52,Straight gyrus L,SgL
+53,Straight gyrus R,SgR
+54,Ant. orbital gyrus L,AogL
+55,Ant. orbital gyrus R,AogR
+56,Inferior frontal gyrus L,IfgL
+57,Inferior frontal gyrus R,IfgR
+58,Superior frontal gyrus L,SfgL
+59,Superior frontal gyrus R,SfgR
+60,Postcentral gyrus L,PostgL
+61,Postcentral gyrus R,PostgR
+62,Superior parietal gyrus L,SpgL
+63,Superior parietal gyrus R,SpgR
+64,Lingual gyrus L,LgL
+65,Lingual gyrus R,LgR
+66,Cuneus L,CunL
+67,Cuneus R,CunR
+68,Medial orbital gyrus L,MogL
+69,Medial orbital gyrus R,MogR
+70,Lateral orbital gyrus L,LogL
+71,Lateral orbital gyrus R,LogR
+72,Post. orbital gyrus L,PogL
+73,Post. orbital gyrus R,PogR
+74,Substantia nigra L,SnL
+75,Substantia nigra R,SnR
+76,Subgenual frontal cortex L,SfcL
+77,Subgenual frontal cortex R,SfcR
+78,Subcallosal area L,SaL
+79,Subcallosal area R,SaR
+80,Pre-subgenual frontal cortex L,PsfcL
+81,Pre-subgenual frontal cortex R,PsfcR
+82,Superior temporal gyrus ant. part L,StgaL
+83,Superior temporal gyrus ant. part R,StgaR
+84,Supramarginal gyrus L,SupgL
+85,Supramarginal gyrus R,SupgR
+86,Insula ant. short gyrus L,IasgL
+87,Insula ant. short gyrus R,IasgR
+88,Insula middle short gyrus L,ImsgL
+89,Insula middle short gyrus R,ImsgR
+90,Insula post. short gyrus L,IpsgL
+91,Insula post. short gyrus R,IpsgR
+92,Insula ant. inferior cortex L,IafcL
+93,Insula ant. inferior cortex R,IafcR
+94,Insula ant. long gyrus L,IalgL
+95,Insula ant. long gyrus R,IalgR
