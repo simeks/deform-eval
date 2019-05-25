@@ -102,7 +102,7 @@ def run_ants():
         ]
 
         ants.transform(data.image_file(p[0]), data.segmentation_file(p[1]), 
-            os.path.join(ants_results_path, 'ants_{}_{}_segm.vtk'.format(p[0], p[1])), t)
+            os.path.join(ants_results_path, '{}_{}_segm.vtk'.format(p[0], p[1])), t)
 
         shutil.move('ants_result_0GenericAffine.mat', os.path.join(ants_results_path, '{}_{}_result_0GenericAffine.mat'.format(p[0], p[1])))
         shutil.move('ants_result_1Warp.nii.gz', os.path.join(ants_results_path, '{}_{}_result_1Warp.nii.gz'.format(p[0], p[1])))
