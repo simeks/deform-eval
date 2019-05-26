@@ -1,7 +1,10 @@
 import os, random, shutil, sys, time
 import ants, data, deform, metric 
 
+
 results_path = 'results'
+if 'DEFORM_EVAL_RESULTS_PATH' in os.environ:
+    results_path = os.environ['DEFORM_EVAL_RESULTS_PATH']
 
 if not os.path.isdir(results_path):
     os.mkdir(results_path)
