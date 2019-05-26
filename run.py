@@ -38,6 +38,16 @@ deform_config = {
     ]
 }
 
+def measure_njac(result_path):
+    with open(os.path.join(result_path, 'njac.csv'), 'w') as f:
+        f.write('fixed,moving,njac\n')
+        for p in data.get_pairs():
+            df = os.path.join(result_path, '{}_{}_result_def.vtk'.format(*p))
+            if not os.path.isfile(df):
+                df = os.path.join(result_path, '{}_{}_result_1Warp.nii.gz'.format(*p))
+
+            njac = metric.njac(df)
+            f.write('{},{},{}\n'.format(p[0], p[1], njac))
 
 def run_deform(test_name, cfg, use_gpu):
     test_results_path = os.path.join(results_path, test_name)
@@ -74,6 +84,8 @@ def run_deform(test_name, cfg, use_gpu):
             data.segmentation_file(p[0]),
             os.path.join(test_results_path, '{}_{}_segm.vtk'.format(p[0], p[1])),
             metric_file)
+
+    measure_njac(test_results_path)
 
 
 def run_ants():
@@ -122,12 +134,28 @@ def run_ants():
             data.affine_file(p)
         )
 
+    measure_njac(ants_results_path)
+
+
 if __name__ == '__main__':
-    if sys.argv[1] == 'setup':
-        data.setup(sys.argv[2])
-    elif sys.argv[1] == 'ants':
+    if len(sys.argv) > 1:
+        if sys.argv[1] == 'setup':
+            data.setup(sys.argv[2])
+        elif sys.argv[1] == 'ants':
+            run_ants()
+        elif sys.argv[1] == 'df_gpu':
+            run_deform('df_gpu', deform_config, True)
+        elif sys.argv[1] == 'df_cpu':
+            run_deform('df_cpu', deform_config, False)
+    else:
+        # Run everything
+        print('ANTs')
         run_ants()
-    elif sys.argv[1] == 'df_gpu':
+        print('df_gpu') 
         run_deform('df_gpu', deform_config, True)
-    elif sys.argv[1] == 'df_cpu':
+        print('df_cpu')
         run_deform('df_cpu', deform_config, False)
+
+
+
+
