@@ -25,9 +25,16 @@ def measure_overlap(src, tgt, csv_out):
     with open(csv_out, 'w') as f:
         f.write('Label,Dice\n')
 
-        src_all = src != 0
-        tgt_all = tgt != 0
-        dsc_all = dsc(src_all, tgt_all)
+        num = 0
+        den = 0
+        for i in range(1, 96):
+            src_i = src == i
+            tgt_i = tgt == i
+            
+            num += np.logical_and(src_i, tgt_i).sum()
+            den += (src_i.sum() + tgt_i.sum())
+
+        dsc_all = 2*num/den
 
         f.write('All,{}\n'.format(dsc_all))
 
