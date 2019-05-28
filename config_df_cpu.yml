@@ -1,0 +1,17 @@
+block_energy_epsilon: 1.0e-08
+block_size: [16, 16, 16]
+image_slots:
+- cost_function:
+  - {function: ncc, radius: 2}
+  normalize: false
+  resampler: gaussian
+levels:
+  '0': {max_iteration_count: 20}
+  '1': {max_iteration_count: 40}
+max_iteration_count: 200
+pyramid_levels: 3
+pyramid_stop_level: 0
+regularization_exponent: 7
+regularization_scale: 7
+regularization_weight: 0.3
+step_size: 0.1
